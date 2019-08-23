@@ -198,16 +198,13 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
         if (clickCallback == null) {
             return;
         }
-        switch (view.getId()) {
-            case R.id.img_back:
-                clickCallback.onBackClick();
-                break;
-            case R.id.txt_finish:
-                clickCallback.onRightClick();
-                break;
-            case R.id.img_finish:
-                clickCallback.onRightImgClick();
-                break;
+        int i = view.getId();
+        if (i == R.id.img_back) {
+            clickCallback.onBackClick();
+        } else if (i == R.id.txt_finish) {
+            clickCallback.onRightClick();
+        } else if (i == R.id.img_finish) {
+            clickCallback.onRightImgClick();
         }
     }
 
