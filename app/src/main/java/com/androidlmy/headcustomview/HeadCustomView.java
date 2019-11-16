@@ -44,6 +44,7 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
         img_back.setOnClickListener(this);
         txt_finish.setOnClickListener(this);
         img_finish.setOnClickListener(this);
+        txt_back.setOnClickListener(this);
     }
 
     public HeadCustomView(Context context) {
