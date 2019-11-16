@@ -8,11 +8,22 @@ package com.androidlmy.headcustomview;
  */
 public interface OnClickHeadView {
     /**
-     * 点击返回按钮回调
+     * 点击左侧按钮回调
      */
     void onBackClick();
 
-    void onRightClick();
+    /**
+     * 点击左侧文字回调
+     */
+    void onBackTextClick();
 
+    /**
+     * 点击右侧文字回调
+     */
+    void onRightTextClick();
+
+    /**
+     * 点击右侧按钮回调
+     */
     void onRightImgClick();
 }
