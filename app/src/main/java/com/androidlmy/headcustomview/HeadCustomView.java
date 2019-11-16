@@ -202,7 +202,7 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
         if (i == R.id.img_back) {
             clickCallback.onBackClick();
         } else if (i == R.id.txt_finish) {
-            clickCallback.onBackTextClick();
+            clickCallback.onRightTextClick();
         } else if (i == R.id.img_finish) {
             clickCallback.onRightImgClick();
         } else if (i == R.id.txt_back) {
