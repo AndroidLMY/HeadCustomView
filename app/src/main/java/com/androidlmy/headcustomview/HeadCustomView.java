@@ -70,14 +70,6 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
         setTextColor(txt_back, resId);
     }
 
-    /**
-     * 隐藏返回键按钮
-     *
-     * @author :limingyang
-     */
-    public void setBackGone() {
-        setImageViewVisibility(img_back, GONE);
-    }
 
     /**
      * 设置返回文字
@@ -222,13 +214,40 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
     }
 
 
+    /**
+     * 隐藏返回键按钮
+     *
+     * @author :limingyang
+     */
+    public void setBackGone() {
+        setImageViewVisibility(img_back, GONE);
+    }
+
+    /**
+     * 隐藏返回键按钮
+     *
+     * @author :limingyang
+     */
+    public void setBackVisible() {
+        setImageViewVisibility(img_back, VISIBLE);
+    }
+
     private void setTitleVisible() {
         setTextViewVisibility(txt_title, VISIBLE);
+    }
+
+    private void setTitleGone() {
+        setTextViewVisibility(txt_title, GONE);
     }
 
     private void setFinishVisible() {
         setTextViewVisibility(txt_finish, VISIBLE);
     }
+
+    private void setFinishGone() {
+        setTextViewVisibility(txt_finish, GONE);
+    }
+
 
     private void setFinishImgVisible() {
         setImageViewVisibility(img_finish, VISIBLE);
@@ -242,8 +261,17 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
         setTextViewVisibility(txt_finish, GONE);
     }
 
+    public void setFinishTextVisible() {
+        setTextViewVisibility(txt_finish, VISIBLE);
+    }
+
+
     public void setBackTitleGone() {
         setTextViewVisibility(txt_back, GONE);
+    }
+
+    public void setBackTitleVisible() {
+        setTextViewVisibility(txt_back, VISIBLE);
     }
 
 
