@@ -265,7 +265,6 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
         setTextViewVisibility(txt_finish, VISIBLE);
     }
 
-
     public void setBackTitleGone() {
         setTextViewVisibility(txt_back, GONE);
     }
@@ -273,7 +272,6 @@ public class HeadCustomView extends RelativeLayout implements View.OnClickListen
     public void setBackTitleVisible() {
         setTextViewVisibility(txt_back, VISIBLE);
     }
-
 
     public void setClickCallBack(OnClickHeadView clickCallBack) {
         this.clickCallback = clickCallBack;
